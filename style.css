@@ -1,0 +1,42 @@
+body {
+    font-family: 'Georgia', serif;
+    background-image: url("image/pinklilies.jpg");
+    background-color: #e4fbd6;
+    color: #fbd6e4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #fbd6e4;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #a84a79;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #c4608e;
+    border-bottom: 1px solid #f4bfdc;
+    padding-bottom: 0.3rem;
+}
+
+a {
+    color: #d67ca2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
