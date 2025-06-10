@@ -1,6 +1,5 @@
 body {
     font-family: 'Georgia', serif;
-    background-image: url("image/pinklilies.jpg");
     background-color: #e4fbd6;
     color: #fbd6e4;
     margin: 0;
@@ -8,12 +7,17 @@ body {
     line-height: 1.6;
 }
 
-header, footer {
+header {
     background-color: #fbd6e4;
     text-align: center;
     padding: 2rem;
 }
 
+footer {
+    background-color: #d595ad;
+    text-align: center;
+    padding: 2rem;
+}
 header h1 {
     font-size: 2.5rem;
     color: #a84a79;
@@ -40,3 +44,7 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    max-width: 35%;
+    height: auto;
+}
