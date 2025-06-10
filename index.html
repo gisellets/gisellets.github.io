@@ -5,16 +5,7 @@
     <link href="image/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="js/init.js"></script>
-
-    <style>
-.profile-pic {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-    </style>
-
-    </head>
+</head>
 <body>
     <header>
         <h1>Welcome to My Website</h1>
@@ -29,7 +20,14 @@
             <p>Hi! I'm Giselle, and I am a sophmore at Arlington Tech. I like to spend time with my friends, listen to music, coding, and make fun memories.
             <h3> A pic of me! </h3>
             <div style="text-align: center;">
-    <img src="image/giselle.jpg" alt="Selfie of Giselle">
+    <img src=image/giselle.jpg
+         alt="Selfie of Giselle"
+		  srcset="image/gisellesmall.jpg 480w,
+			  image/gisellemedium.jpg 800w,
+			  image/gisellelarge.jpg 1200w"
+		  sizes="(max-width: 480px) 95vw,
+	                 (max-width: 800px) 45vw,
+			 30vw">           
             </div>
             <div class="links">
 	  <p><a href="https://github.com/gisellets/gisellets.github.io">Click here to see my repo!</a>
