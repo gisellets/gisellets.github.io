@@ -1,117 +1,146 @@
-:root {
- –petal-rouge: #E27396;
- –pink-mist: #EA9AB2;
- –petal-frost: #EFCFE3;
- –beige: #EAF2D7;
- –frosted-blue: #B3DEE2;
- –text-color: #4a4a4a;
- }
-{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- }
-body {
- background-color: var(–beige);
- color: var(–text-color);
- font-family: Georgia, serif;
- min-height: 100vh;
- }
-nav {
- background-color: white;
- padding: 20px;
- box-shadow: 0 2px 10px rgba(0,0,0,0.05);
- }
-nav ul {
- list-style: none;
- display: flex;
- justify-content: center;
- gap: 30px;
- }
-nav a {
- text-decoration: none;
- color: var(–petal-rouge);
- font-weight: bold;
- text-transform: lowercase;
- }
-nav a:hover {
- color: var(–frosted-blue);
- }
-.hero {
- max-width: 900px;
- margin: 100px auto;
- text-align: center;
- padding: 40px;
- }
-.hero h1 {
- font-size: 4rem;
- color: var(–petal-rouge);
- margin-bottom: 20px;
- }
-.hero h2 {
- font-size: 1.4rem;
- margin-bottom: 25px;
- font-weight: normal;
- }
-.hero p {
- font-size: 1.1rem;
- line-height: 1.7;
- margin-bottom: 40px;
- }
-.button-container {
- display: flex;
- justify-content: center;
- gap: 20px;
- flex-wrap: wrap;
- }
-.button {
- background-color: var(–petal-rouge);
- color: white;
- padding: 12px 24px;
- border-radius: 999px;
- text-decoration: none;
- transition: 0.3s;
- }
-.button:hover {
- transform: translateY(-2px);
- }
-.card {
- max-width: 900px;
- margin: 50px auto;
- background: white;
- padding: 40px;
- border-radius: 20px;
- box-shadow: 0 4px 15px rgba(0,0,0,0.08);
- }
-.card h1 {
- color: var(–petal-rouge);
- margin-bottom: 20px;
- }
-.card h2 {
- color: var(–petal-rouge);
- margin-top: 25px;
- margin-bottom: 10px;
- }
-.card p,
- .card li {
- line-height: 1.7;
- }
-.card ul {
- padding-left: 20px;
- }
-footer {
- text-align: center;
- padding: 20px;
- margin-top: 50px;
- }
-footer p {
- font-size: 0.9rem;
- }
-.project-link {
- display: inline-block;
- margin-top: 15px;
- color: var(–petal-rouge);
- font-weight: bold;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Georgia, serif;
+    background-color: #EAF2D7;
+    color: #3f3f3f;
+}
+
+/* NAVIGATION */
+nav {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E27396;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+nav a:hover {
+    color: #B3DEE2;
+}
+
+/* HERO SECTION */
+.hero {
+    max-width: 900px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #E27396;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    background: #E27396;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #EA9AB2;
+    transform: translateY(-2px);
+}
+
+/* CARDS */
+.card {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h1 {
+    color: #E27396;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-top: 20px;
+    color: #E27396;
+}
+
+.card p, .card li {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+/* LINKS */
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #E27396;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #B3DEE2;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
 
