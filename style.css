@@ -6,7 +6,7 @@
 
 body {
     font-family: Georgia, serif;
-    background-color: #EAF2D7;
+    background-color: #faf3dd;
     color: #3f3f3f;
     line-height: 1.6;
 }
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #7FAE9A;
+    color: #bfcc94;
 }
 
 /* HERO */
