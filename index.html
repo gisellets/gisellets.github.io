@@ -1,45 +1,109 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Giselle Terrazas</title>
+<meta charset="utf-8">
+<title>Giselle Terrazas Saldana | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="aboutme.html">about me</a></li>
-        <li><a href="education.html">education</a></li>
-        <li><a href="mywork.html">projects</a></li>
-        <li><a href="resume.html">resume</a></li>
-        <li><a href="contact.html">contact</a></li>
-    </ul>
-</nav>
+<!-- HERO -->
+<section class="hero">
+  <h1>Giselle Terrazas Saldana</h1>
+  <p class="subtitle">Student • Problem Solver • Leader • Bilingual Creator</p>
 
-<main class="hero">
+  <button onclick="rotateText()">Who am I?</button>
+  <p id="whoami"></p>
+</section>
 
-    <h1>✿ giselle terrazas</h1>
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a detail-oriented student at Arlington Tech and Northern Virginia Community College.
+    I am passionate about technology, problem-solving, and leadership in STEM environments.
+    I am bilingual in English and Spanish and enjoy applying my skills to real-world projects.
+  </p>
+</section>
 
-    <p>
-        welcome to my portfolio website. here you can learn more about my
-        education, technical projects, and professional experiences.
-    </p>
+<!-- PROJECTS -->
+<section class="section">
+  <h2>Projects</h2>
 
-    <div class="button-container">
-        <a class="button" href="aboutme.html">about me</a>
-        <a class="button" href="mywork.html">view projects</a>
-    </div>
+  <div class="card">
+    <h3>Cosmetology Django Web App</h3>
+    <p>Web scheduling platform built to support cosmetology spa-day appointments using Django.</p>
+    <a href="https://github.com/ACCDjangoGirls/cosmetology_webapp" target="_blank">View Code</a>
+  </div>
 
-</main>
+  <div class="card">
+    <h3>EIP Research Program</h3>
+    <p>Research assistant experience with George Mason University focusing on academic research and data analysis.</p>
+  </div>
 
-<script src="validator/init.js"></script>
+  <div class="card">
+    <h3>My Mother Was a Mermaid Project</h3>
+    <p>Literary and creative analysis project exploring storytelling, identity, and thematic interpretation.</p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <h2>Experience</h2>
+
+  <ul>
+    <li>Cashier – Home Depot (customer service, teamwork, responsibility)</li>
+    <li>JROTC / Space Force Awards Recipient</li>
+    <li>STEM leadership & classroom-based technical work</li>
+  </ul>
+</section>
+
+<!-- AWARDS -->
+<section class="section">
+  <h2>Awards & Recognition</h2>
+
+  <ul>
+    <li>AFA Space Force JROTC Cadet Award  
+      <a href="https://www.afa.org/steele-chapter-honors-space-force-jrotc-cadet-of-the-year-2/" target="_blank">View</a>
+    </li>
+    <li>CPE Certification – C++ Programming</li>
+    <li>CTE Technical Achievement Award – Programming</li>
+    <li>Pursuit of Excellence Awards (JROTC & Programming)</li>
+    <li>Education Summit / Presentation Experience</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2>Contact</h2>
+
+  <p>Email: yourname@email.com</p>
+  <p>LinkedIn: (add link)</p>
+  <p>GitHub: https://github.com/yourusername</p>
+
+  <a href="resume.pdf" target="_blank">View Resume PDF</a>
+</section>
+
+<script>
+const phrases = [
+  "Problem Solver",
+  "Student",
+  "Leader",
+  "Always Learning",
+  "Bilingual"
+];
+
+let i = 0;
+
+function rotateText() {
+  document.getElementById("whoami").innerText = phrases[i];
+  i = (i + 1) % phrases.length;
+}
+</script>
+
 </body>
 </html>
 
