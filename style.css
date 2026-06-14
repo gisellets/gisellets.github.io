@@ -84,11 +84,52 @@ h2 {
 
 /* SPECIAL HERO BUTTON */
 .hero {
-    max-width: 850px;
+    max-width: 900px;
     margin: 120px auto;
     text-align: center;
+    padding: 20px;
 }
 
+/* BIG NAME — this is your main identity */
+.name {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #E27396;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* “Hi I’m” line */
+.intro-line {
+    font-size: 1.3rem;
+    color: #6b6b6b;
+    margin-bottom: 10px;
+}
+
+/* TYPEWRITER — important but NOT bigger than name */
+.typewriter {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3f3f3f;
+    margin-bottom: 25px;
+}
+
+/* DESCRIPTION PARAGRAPH — make it feel intentional */
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+}
+
+/* BUTTONS */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 #identityBtn {
     font-size: 1.1rem;
     padding: 14px 22px;
