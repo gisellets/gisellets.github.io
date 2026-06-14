@@ -6,12 +6,12 @@
 
 body {
     font-family: Georgia, serif;
-    background-color: #EAF2D7; /* beige */
+    background-color: #EAF2D7;
     color: #3f3f3f;
     line-height: 1.6;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav {
     background: white;
     padding: 18px;
@@ -29,17 +29,16 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #E27396; /* pink */
+    color: #E27396;
     font-weight: bold;
     text-transform: capitalize;
-    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #7FAE9A; /* sage green */
+    color: #7FAE9A;
 }
 
-/* HERO (INDEX PAGE) */
+/* HERO */
 .hero {
     max-width: 900px;
     margin: 90px auto;
@@ -48,30 +47,47 @@ nav a:hover {
 }
 
 /* NAME */
-.hero h1 {
+.name {
     font-size: 3.2rem;
     color: #E27396;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
-/* TYPEWRITER TEXT — YOUR MAIN REQUEST */
-.typing-text {
+/* INTRO LINE */
+.intro-line {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* TYPEWRITER */
+.typewriter {
     font-size: 1.7rem;
-    color: #7FAE9A !important; /* LOCKED sage green */
+    color: #7FAE9A;
     font-weight: 600;
     min-height: 40px;
     margin-bottom: 18px;
 }
 
-/* INTRO PARAGRAPH */
-.hero p {
+.cursor {
+    color: #7FAE9A;
+    font-weight: bold;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* DESCRIPTION */
+.hero-description {
     font-size: 1.05rem;
     max-width: 650px;
     margin: 0 auto 30px;
     color: #444;
 }
 
-/* 🌸 BUTTONS (BACK + IMPROVED) */
+/* BUTTONS */
 .button-container {
     display: flex;
     justify-content: center;
@@ -79,7 +95,6 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-/* THIS is what makes links look like buttons again */
 .button {
     background: #E27396;
     color: white;
@@ -87,18 +102,16 @@ nav a:hover {
     border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
     transition: 0.25s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* hover effect */
 .button:hover {
     background: #EA9AB2;
     transform: translateY(-2px);
 }
 
-/* CARDS (ALL OTHER PAGES) */
+/* CARDS (OTHER PAGES) */
 .card {
     max-width: 900px;
     margin: 40px auto;
@@ -122,14 +135,13 @@ nav a:hover {
     margin-top: 10px;
 }
 
-/* LINKS (also styled like subtle buttons) */
+/* LINKS */
 .project-link {
     display: inline-block;
     margin-top: 10px;
     color: #7FAE9A;
     font-weight: bold;
     text-decoration: none;
-    transition: 0.2s;
 }
 
 .project-link:hover {
@@ -144,18 +156,14 @@ footer {
     font-size: 0.9rem;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media (max-width: 600px) {
-    .hero h1 {
+    .name {
         font-size: 2.4rem;
     }
 
-    .typing-text {
+    .typewriter {
         font-size: 1.3rem;
-    }
-
-    nav ul {
-        gap: 15px;
     }
 }
 

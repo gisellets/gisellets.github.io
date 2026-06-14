@@ -13,6 +13,7 @@ let isDeleting = false;
 
 function type() {
   const display = document.getElementById("type-text");
+  if (!display) return;
 
   let fullText = roles[i];
 
