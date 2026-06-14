@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Giselle Terrazas Saldana | Portfolio</title>
-
+<title>Giselle Terrazas Saldana</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -13,10 +11,9 @@
 <!-- HERO -->
 <section class="hero">
   <h1>Giselle Terrazas Saldana</h1>
-  <p class="subtitle">Student • Problem Solver • Leader • Bilingual Creator</p>
 
-  <button onclick="rotateText()">Who am I?</button>
-  <p id="whoami"></p>
+  <button onclick="rotate()">Who am I?</button>
+  <p id="rotateText"></p>
 </section>
 
 <!-- ABOUT -->
@@ -24,8 +21,7 @@
   <h2>About Me</h2>
   <p>
     I am a detail-oriented student at Arlington Tech and Northern Virginia Community College.
-    I am passionate about technology, problem-solving, and leadership in STEM environments.
-    I am bilingual in English and Spanish and enjoy applying my skills to real-world projects.
+    I am passionate about technology, leadership, and problem-solving. I am bilingual in English and Spanish.
   </p>
 </section>
 
@@ -35,73 +31,100 @@
 
   <div class="card">
     <h3>Cosmetology Django Web App</h3>
-    <p>Web scheduling platform built to support cosmetology spa-day appointments using Django.</p>
-    <a href="https://github.com/ACCDjangoGirls/cosmetology_webapp" target="_blank">View Code</a>
+    <p>Web scheduling platform for cosmetology spa-day appointments using Django.</p>
+    <a href="https://github.com/ACCDjangoGirls/cosmetology_webapp">View Code</a>
   </div>
 
   <div class="card">
     <h3>EIP Research Program</h3>
-    <p>Research assistant experience with George Mason University focusing on academic research and data analysis.</p>
+    <p>George Mason University research assistant program focused on academic research and data analysis.</p>
   </div>
 
   <div class="card">
     <h3>My Mother Was a Mermaid Project</h3>
-    <p>Literary and creative analysis project exploring storytelling, identity, and thematic interpretation.</p>
+    <p>Literary analysis project exploring narrative themes and identity through storytelling.</p>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section class="section">
   <h2>Experience</h2>
-
   <ul>
-    <li>Cashier – Home Depot (customer service, teamwork, responsibility)</li>
-    <li>JROTC / Space Force Awards Recipient</li>
-    <li>STEM leadership & classroom-based technical work</li>
+    <li>Cashier – Home Depot</li>
+    <li>Space Force JROTC Awards Recipient</li>
+    <li>STEM coursework & leadership roles</li>
+  </ul>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <h2>Education</h2>
+  <ul>
+    <li>Arlington Tech (Grace Hopper Center)</li>
+    <li>Northern Virginia Community College (NOVA)</li>
+    <li>Dual Enrollment STEM Coursework</li>
   </ul>
 </section>
 
 <!-- AWARDS -->
 <section class="section">
   <h2>Awards & Recognition</h2>
-
   <ul>
     <li>AFA Space Force JROTC Cadet Award  
-      <a href="https://www.afa.org/steele-chapter-honors-space-force-jrotc-cadet-of-the-year-2/" target="_blank">View</a>
+      <a href="https://www.afa.org/steele-chapter-honors-space-force-jrotc-cadet-of-the-year-2/">Link</a>
     </li>
-    <li>CPE Certification – C++ Programming</li>
-    <li>CTE Technical Achievement Award – Programming</li>
-    <li>Pursuit of Excellence Awards (JROTC & Programming)</li>
-    <li>Education Summit / Presentation Experience</li>
+    <li>CPE Certification – C++</li>
+    <li>CTE Technical Achievement Award</li>
+    <li>Pursuit of Excellence Awards (Programming + JROTC)</li>
   </ul>
 </section>
 
 <!-- CONTACT -->
 <section class="section">
   <h2>Contact</h2>
+  <p>Email: your email here</p>
+  <p>GitHub: your link here</p>
+  <p>LinkedIn: your link here</p>
 
-  <p>Email: yourname@email.com</p>
-  <p>LinkedIn: (add link)</p>
-  <p>GitHub: https://github.com/yourusername</p>
-
-  <a href="resume.pdf" target="_blank">View Resume PDF</a>
+  <a href="resume.pdf" target="_blank">View Resume</a>
 </section>
 
+<!-- FOOTER + VALIDATOR (CLEAN) -->
+<footer>
+  <a id="vLink1" href="#">HTML Valid</a>
+  <a id="vLink2" href="#">CSS Valid</a>
+</footer>
+
 <script>
-const phrases = [
-  "Problem Solver",
-  "Student",
-  "Leader",
-  "Always Learning",
-  "Bilingual"
-];
+function rotate() {
+  const words = [
+    "Problem Solver",
+    "Student",
+    "Leader",
+    "Always Learning",
+    "Bilingual (English & Spanish)"
+  ];
 
-let i = 0;
+  let i = 0;
+  document.getElementById("rotateText").innerText = words[i];
 
-function rotateText() {
-  document.getElementById("whoami").innerText = phrases[i];
-  i = (i + 1) % phrases.length;
+  i++;
+  setInterval(() => {
+    document.getElementById("rotateText").innerText = words[i % words.length];
+    i++;
+  }, 1500);
 }
+
+/* validator FIX */
+window.onload = function () {
+  const url = encodeURIComponent(window.location.href);
+
+  document.getElementById("vLink1").href =
+    "https://validator.w3.org/nu/?doc=" + url;
+
+  document.getElementById("vLink2").href =
+    "https://jigsaw.w3.org/css-validator/validator?uri=" + url;
+};
 </script>
 
 </body>
