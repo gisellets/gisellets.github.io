@@ -1,75 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fffaf7;
-  color: #2b2b2b;
+    font-family: Georgia, serif;
+    background-color: #F6F1E8;
+    color: #3F3F3F;
+}
+
+/* NAV */
+nav {
+    background: white;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E27396;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #B3CBB9;
 }
 
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: #f7dfe2;
+    max-width: 800px;
+    margin: 120px auto;
+    text-align: center;
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin: 0;
-  font-weight: 600;
+    font-size: 3rem;
+    color: #E27396;
+    margin-bottom: 20px;
 }
 
-/* BUTTON */
-button {
-  margin-top: 20px;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 20px;
-  background: #b88c92;
-  color: white;
-  cursor: pointer;
+/* BUTTONS */
+.button {
+    background: #E27396;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
-/* SECTIONS */
-.section {
-  max-width: 800px;
-  margin: auto;
-  padding: 50px 20px;
+.button:hover {
+    background: #EA9AB2;
+    transform: translateY(-2px);
 }
 
-h2 {
-  border-bottom: 2px solid #b88c92;
-  padding-bottom: 5px;
+.button-container {
+    margin-top: 20px;
 }
 
-/* CARDS */
-.card {
-  background: white;
-  padding: 15px;
-  margin-top: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-/* LINKS */
-a {
-  color: #8b5c63;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* FOOTER (FIXED CLEAN) */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #f2f2f2;
-  margin-top: 60px;
-}
-
-footer a {
-  margin: 0 10px;
-  font-weight: bold;
+/* identity text */
+#identityText {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #6B6B6B;
 }
 
