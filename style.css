@@ -6,7 +6,7 @@
 
 body {
     font-family: Georgia, serif;
-    background-color: #EAF2D7;
+    background-color: #F3F0E8; /* soft cream beige */
     color: #3f3f3f;
     line-height: 1.6;
 }
@@ -39,7 +39,7 @@ nav a:hover {
     color: #6FAF9C;
 }
 
-/* HERO (INDEX PAGE) */
+/* HERO SECTION */
 .hero {
     max-width: 900px;
     margin: 90px auto;
@@ -47,24 +47,23 @@ nav a:hover {
     padding: 20px;
 }
 
-/* 👇 FIXED BIG TITLE (smaller + cleaner hierarchy) */
+/* BIG NAME */
 .hero h1 {
-    font-size: 3rem;   /* was too big at 4rem */
+    font-size: 3.2rem;
     color: #E27396;
-    margin-bottom: 12px;
-    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
-/* typing line */
+/* TYPEWRITER TEXT — FIXED SAGE GREEN */
 .typing-text {
-    font-size: 1.6rem;
-    color: #6FAF9C;
-    font-weight: 500;
+    font-size: 1.7rem;
+    color: #6FAF9C !important;  /* FORCE sage green */
+    font-weight: 600;
     min-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
-/* intro paragraph */
+/* INTRO TEXT */
 .hero p {
     font-size: 1.05rem;
     max-width: 650px;
@@ -72,7 +71,7 @@ nav a:hover {
     color: #444;
 }
 
-/* BUTTONS */
+/* 🌸 BUTTONS (RESTORED PINK AESTHETIC) */
 .button-container {
     display: flex;
     justify-content: center;
@@ -83,15 +82,16 @@ nav a:hover {
 .button {
     background: #E27396;
     color: white;
-    padding: 12px 22px;
+    padding: 12px 24px;
     border-radius: 999px;
     text-decoration: none;
-    transition: 0.3s;
     font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
 }
 
 .button:hover {
-    background: #6FAF9C;
+    background: #EA9AB2;
     transform: translateY(-2px);
 }
 
@@ -101,7 +101,7 @@ nav a:hover {
     margin: 40px auto;
     background: white;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 18px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
@@ -140,10 +140,14 @@ footer {
     font-size: 0.9rem;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 2.4rem;
+    }
+
+    .typing-text {
+        font-size: 1.3rem;
     }
 
     nav ul {
