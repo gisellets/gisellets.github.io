@@ -8,9 +8,10 @@ body {
     font-family: Georgia, serif;
     background-color: #F6F1E8;
     color: #3F3F3F;
+    line-height: 1.6;
 }
 
-/* NAV */
+/* NAVIGATION */
 nav {
     background: white;
     padding: 16px;
@@ -22,59 +23,93 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 22px;
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     color: #E27396;
     font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
 }
 
 nav a:hover {
     color: #B3CBB9;
 }
 
-/* HERO */
-.hero {
-    max-width: 800px;
-    margin: 120px auto;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
+/* HEADINGS */
+h1 {
     color: #E27396;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-/* BUTTONS */
-.button {
+h2 {
+    color: #B3CBB9;
+    margin-top: 20px;
+}
+
+/* CARD SYSTEM */
+.card {
+    max-width: 850px;
+    margin: 40px auto;
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* BUTTON SYSTEM (IMPORTANT FIX) */
+.button,
+.project-link {
+    display: inline-block;
     background: #E27396;
     color: white;
     padding: 12px 18px;
     border-radius: 999px;
     text-decoration: none;
-    display: inline-block;
-    margin: 10px;
+    margin-top: 10px;
     transition: 0.3s;
+    font-weight: bold;
     border: none;
     cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.project-link:hover {
     background: #EA9AB2;
     transform: translateY(-2px);
 }
 
-.button-container {
-    margin-top: 20px;
+/* SPECIAL HERO BUTTON */
+.hero {
+    max-width: 850px;
+    margin: 120px auto;
+    text-align: center;
 }
 
-/* identity text */
-#identityText {
-    margin: 15px 0;
-    font-size: 1.2rem;
+#identityBtn {
+    font-size: 1.1rem;
+    padding: 14px 22px;
+}
+
+/* RESUME FIX */
+iframe {
+    width: 100%;
+    max-width: 750px;
+    height: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.9rem;
     color: #6B6B6B;
 }
 
