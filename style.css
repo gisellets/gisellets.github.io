@@ -6,7 +6,7 @@
 
 body {
     font-family: Georgia, serif;
-    background-color: #F3F0E8; /* soft cream beige */
+    background-color: #EAF2D7; /* beige */
     color: #3f3f3f;
     line-height: 1.6;
 }
@@ -29,17 +29,17 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #E27396;
+    color: #E27396; /* pink */
     font-weight: bold;
     text-transform: capitalize;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #6FAF9C;
+    color: #7FAE9A; /* sage green */
 }
 
-/* HERO SECTION */
+/* HERO (INDEX PAGE) */
 .hero {
     max-width: 900px;
     margin: 90px auto;
@@ -47,23 +47,23 @@ nav a:hover {
     padding: 20px;
 }
 
-/* BIG NAME */
+/* NAME */
 .hero h1 {
     font-size: 3.2rem;
     color: #E27396;
     margin-bottom: 10px;
 }
 
-/* TYPEWRITER TEXT — FIXED SAGE GREEN */
+/* TYPEWRITER TEXT — YOUR MAIN REQUEST */
 .typing-text {
     font-size: 1.7rem;
-    color: #6FAF9C !important;  /* FORCE sage green */
+    color: #7FAE9A !important; /* LOCKED sage green */
     font-weight: 600;
     min-height: 40px;
     margin-bottom: 18px;
 }
 
-/* INTRO TEXT */
+/* INTRO PARAGRAPH */
 .hero p {
     font-size: 1.05rem;
     max-width: 650px;
@@ -71,7 +71,7 @@ nav a:hover {
     color: #444;
 }
 
-/* 🌸 BUTTONS (RESTORED PINK AESTHETIC) */
+/* 🌸 BUTTONS (BACK + IMPROVED) */
 .button-container {
     display: flex;
     justify-content: center;
@@ -79,23 +79,26 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
+/* THIS is what makes links look like buttons again */
 .button {
     background: #E27396;
     color: white;
-    padding: 12px 24px;
+    padding: 12px 26px;
     border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
     display: inline-block;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
+/* hover effect */
 .button:hover {
     background: #EA9AB2;
     transform: translateY(-2px);
 }
 
-/* CARDS */
+/* CARDS (ALL OTHER PAGES) */
 .card {
     max-width: 900px;
     margin: 40px auto;
@@ -112,20 +115,21 @@ nav a:hover {
 
 .card h2 {
     margin-top: 20px;
-    color: #6FAF9C;
+    color: #7FAE9A;
 }
 
 .card p, .card li {
     margin-top: 10px;
 }
 
-/* LINKS */
+/* LINKS (also styled like subtle buttons) */
 .project-link {
     display: inline-block;
     margin-top: 10px;
-    color: #6FAF9C;
+    color: #7FAE9A;
     font-weight: bold;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .project-link:hover {
@@ -140,7 +144,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 2.4rem;
