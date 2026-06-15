@@ -193,13 +193,16 @@ nav a:hover {
 }
 
 .card p, .card li {
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.6;
+
 }
 
 /* LINKS */
 .project-link {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 14px;
     color: #7FAE9A;
     font-weight: bold;
     text-decoration: none;
