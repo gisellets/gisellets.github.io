@@ -1,9 +1,10 @@
 const roles = [
-  "a Computer Science Student",
-  "a Lifelong Learner",
-  "a Problem Solver",
-  "a Leader",
-  "a Web Developer"
+  "A Computer Science Student",
+  "A Lifelong Learner",
+  "A Problem Solver",
+  "A Leader",
+  "A Web Developer",
+  "A Coffee Lover"
 ];
 
 let i = 0;
