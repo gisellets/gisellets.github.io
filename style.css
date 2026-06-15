@@ -115,11 +115,14 @@ nav a:hover {
 
 /* RIGHT IMAGE */
 .hero-right img {
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 18px;
   border: 4px solid #E27396;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12)
+
+  display: block;
 }
 
 /* RESPONSIVE */
